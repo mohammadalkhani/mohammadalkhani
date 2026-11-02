@@ -1,51 +1,100 @@
-# 👋 Hi there, I'm Mohammad Al-Khani
+# Mohammad Al-Khani
 
-💻 **Staff Backend Software Engineer**  
-🔧 Builder of scalable, cloud-native systems and cost-efficient platforms  
-🌍 Based in Austin, TX | 🌐 [alkhani.dev](http://alkhani.dev) | 📫 [mhd@alkhani.dev](mailto:mhd@alkhani.dev)
+### Staff Software Engineer | Platform Architect & Distributed Systems Lead
 
----
-
-## 🧠 About Me
-
-I'm a backend-focused engineer passionate about designing resilient distributed systems and accelerating product delivery through thoughtful architecture and tooling.
-
-I work at the intersection of:
-
-- 🧱 **Backend Engineering** – Scalable microservices, API gateways, multithreaded systems  
-- ☁️ **Platform & Infrastructure** – AWS, Kubernetes, Terraform, CI/CD pipelines  
-- 📊 **Observability & Optimization** – Cost monitoring, performance tuning, fault injection  
-
-I've led initiatives across IoT, FinTech, InsurTech, and developer experience platforms—mentoring engineers and driving cross-functional alignment along the way.
+```
+[ TBE_CORE // v2.6.4 ] :: [ prod-cluster: HEALTHY ] :: [ 99.999% SLOs ]
+```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛰️ `GET /system_profile.json`
 
-**Languages:** Java, Python, SQL, Shell, Golang, Ruby  
-**Cloud & Infra:** AWS (Lambda, EKS, EC2, Kinesis), Kubernetes, Terraform  
-**Frameworks:** Spring Boot, Flask, Django, Ruby on Rails  
-**Data & Messaging:** Redis, Postgres, MySQL, Kafka, RabbitMQ  
-**DevOps & CI/CD:** Docker, Helm, GitHub Actions, Jenkins  
-**Testing:** JUnit, Mockito, REST-Assured, JMeter
-
----
-
-## 📈 Highlighted Achievements
-
-- 🏗️ Rebuilt a critical AWS Kinesis bridge service with 99.999% SLO  
-- 💰 Drove $1M+ savings with a custom Spring Boot caching layer  
-- 📉 Slashed infra spend by building a real-time cost pipeline with AWS Lambda  
-- 🚀 Led EC2 → EKS migration, standardizing Kubernetes usage at org level  
-- 🧪 Created POCs and reusable patterns adopted across 10+ engineering teams  
-
----
-
-## 🧭 Let’s Connect!
-
-📨 Reach out: [mhd@alkhani.dev](mailto:mhd@alkhani.dev)  
-🔗 LinkedIn: [linkedin.com/in/mohammadalkhani](https://linkedin.com/in/mohammadalkhani)
+```json
+{
+  "engineer": "Mohammad Al-Khani",
+  "title": "Staff Software Engineer | Platform Architect & Distributed Systems Lead",
+  "experience": "14+ years (Enterprise Platforms & High-Throughput Distributed Systems)",
+  "education": {
+    "graduate": "Carnegie Mellon University (M.S. in IT, GPA: 3.99 / 4.0)",
+    "undergraduate": "Prince Sultan University (B.S. in CS, Ranked 1st in Class)"
+  },
+  "provenance": ["General Motors (Motorsports)", "Life360", "Upstart", "Oracle", "Code Objects"],
+  "focus_domains": [
+    "High-Throughput Microservices & Low-Latency APIs",
+    "Distributed Locking & Race Condition Elimination",
+    "Cache Optimization & Paved-Road SDKs",
+    "Cloud FinOps & Multi-AZ Network Routing",
+    "AI PR Review Governance (AGENTS.md)"
+  ]
+}
+```
 
 ---
 
-> _"Build systems that scale with business needs—and people who scale with them."_  
+## 📊 `GET /results` // Quantified Production Impact
+
+| Metric | System Impact | Enterprise Provenance |
+| :--- | :--- | :--- |
+| **`100% → 0%`** | **Lock Starvation Elimination**<br>Re-engineered distributed race state engine concurrency using append-based log sequences over global Redis mutexes. | **General Motors** |
+| **`-44%`** | **Cache Memory Footprint Reduction**<br>Authored standardized `common-redis` shared library across Java/Python services on EKS, dropping footprint from 39.9 GB to 22.5 GB. | **General Motors** |
+| **`$1M+ / yr`** | **Multi-AZ Network Cost Reduction**<br>Re-architected 30+ Java microservices with zone-aware routing, slashing inter-AZ cross-talk at 99.999% availability SLOs. | **Life360** |
+| **`$1M+ / yr`** | **Real-Time FinOps & Cloud Savings**<br>Built real-time serverless cost visibility pipeline with AWS Lambda, automating infrastructure right-sizing across engineering squads. | **Life360** |
+| **`$10M+ / yr`** | **Commercial Licensing Fees Eliminated**<br>Engineered high-throughput batch ingestion engine in Java & Spring Boot, eliminating third-party software dependencies with 100% changeset auditability. | **Code Objects** |
+
+---
+
+## 🏛️ Case Studies & Platform Architecture
+
+Detailed production architectural deep-dives published at [**thebackendengineer.dev/case-studies**](https://thebackendengineer.dev/case-studies/):
+
+* **[P-01] Append-Only Log Over Global Mutex:** Eliminating distributed lock contention under peak racing telemetry streams.
+* **[P-02] Key-Level Cache Memory Profiling:** Enforcing serialization standards and TTL policies across EKS clusters.
+* **[P-04] Zone-Aware Microservice Routing:** AWS multi-AZ cost optimization without sacrificing high-availability failover.
+* **[P-06] Service-Owner Cost Visibility:** Decentralizing cloud FinOps into continuous developer feedback loops.
+* **[P-07] Custom Batch Importer Engine:** Decomposing enterprise data bottlenecks into horizontally scalable Java batch pipelines.
+
+---
+
+## ⚙️ Architecture Strategy & RFC Governance
+
+How large-scale platforms evolve across multi-quarter roadmaps without breaking production:
+
+```
+[ Problem & Boundary Scope ]
+            │
+            ▼
+[ Architecture RFC & ADRs ]
+            │
+            ▼
+[ Paved Roads & AI Guardrails (AGENTS.md) ]
+            │
+            ▼
+[ Dark Canary & Fault Injection ]
+            │
+            ▼
+[ SLO & Unit Cost Observability ]
+            │
+            ▼
+[ Blameless Post-Mortem Feedback ]
+```
+
+---
+
+## 🛠️ Technical Stack & Tooling
+
+```
+Languages       :: Java, Python, SQL, Bash, Go
+Architecture    :: Distributed Systems, DDD, Event-Driven, Microservices, Low-Latency APIs
+Messaging/Data  :: Apache Kafka, RabbitMQ, Redis, PostgreSQL, MySQL, MongoDB
+Cloud / Infra   :: AWS (EKS, Lambda, Kinesis, EC2, ECS), Docker, Kubernetes, Terraform, Helm
+Observability   :: Datadog, Prometheus, PromQL, Grafana, OpenTelemetry, PagerDuty
+CI/CD & DevEx   :: GitHub Actions, ArgoCD, Jenkins, AGENTS.md (AI PR Governance)
+```
+
+---
+
+## 🌐 Connect & Learn More
+
+* 🌐 **Technical Portfolio & Case Studies:** [thebackendengineer.dev](https://thebackendengineer.dev/)
+* 💼 **LinkedIn Profile:** [linkedin.com/in/mohammadalkhan](https://linkedin.com/in/mohammadalkhan)
