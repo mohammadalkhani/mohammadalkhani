@@ -44,18 +44,6 @@
 
 ---
 
-## 🏛️ Case Studies & Platform Architecture
-
-Detailed production architectural deep-dives published at [**thebackendengineer.dev/case-studies**](https://thebackendengineer.dev/case-studies/):
-
-* **[P-01] Append-Only Log Over Global Mutex:** Eliminating distributed lock contention under peak racing telemetry streams.
-* **[P-02] Key-Level Cache Memory Profiling:** Enforcing serialization standards and TTL policies across EKS clusters.
-* **[P-04] Zone-Aware Microservice Routing:** AWS multi-AZ cost optimization without sacrificing high-availability failover.
-* **[P-06] Service-Owner Cost Visibility:** Decentralizing cloud FinOps into continuous developer feedback loops.
-* **[P-07] Custom Batch Importer Engine:** Decomposing enterprise data bottlenecks into horizontally scalable Java batch pipelines.
-
----
-
 ## ⚙️ Architecture Strategy & RFC Governance
 
 How large-scale platforms evolve across multi-quarter roadmaps without breaking production:
